@@ -7,8 +7,8 @@ router.get('/', async (req, res) => {
 })
 
 router.post('/', async (req, res) => {
-    const vehicle = await new Vehicle(req.body).save()
-    res.json(vehicle)
+    const vehicles = await new Vehicle(req.body).save()
+    res.json(vehicles)
 
 })
 
